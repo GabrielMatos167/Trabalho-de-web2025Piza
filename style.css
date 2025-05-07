@@ -1,0 +1,351 @@
+/* Reset e Importação de Fontes */
+/* Remove margens e paddings padrão de todos os elementos e define box-sizing para border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importa fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:wght@400;500;600&display=swap');
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: 'EB Garamond', serif; /* Define a fonte principal */
+  background-color: #f0e4d4; /* Cor de fundo */
+  color: #4a3c2a; /* Cor do texto */
+  line-height: 1.7; /* Altura da linha */
+}
+
+/* Cabeçalho */
+/* Estiliza o cabeçalho fixo no topo */
+header {
+  background-color: #000000; /* Cor de fundo */
+  padding: 1.8rem 0; /* Espaçamento interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra */
+  position: sticky; /* Fixa o cabeçalho no topo ao rolar */
+  top: 0;
+  z-index: 100; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Estiliza a lista de navegação */
+nav ul {
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza os itens */
+  list-style: none; /* Remove os marcadores da lista */
+  gap: 3rem; /* Espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+/* Estiliza os links do menu */
+nav a {
+  color: #f0e4d4; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 1.3rem; /* Tamanho da fonte */
+  font-weight: 500; /* Peso da fonte */
+  padding: 0.6rem 1.2rem; /* Espaçamento interno */
+  border-radius: 30px; /* Bordas arredondadas */
+  transition: all 0.4s ease; /* Transição suave para hover */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+  background-color: #6b5d4d; /* Cor de fundo ao passar o mouse */
+  color: #fff9e6; /* Cor do texto ao passar o mouse */
+  transform: translateY(-3px); /* Eleva o link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Seção Hero */
+/* Estiliza a seção inicial com imagem de fundo */
+#home {
+  background: linear-gradient(rgba(108, 91, 72, 0.7), rgba(108, 91, 72, 0.7)), 
+              url('img/pexels-engin-akyurt-2260208.jpg'); /* Imagem com gradiente */
+  background-size: cover; /* Cobre toda a área */
+  background-position: center; /* Centraliza a imagem */
+  height: 90vh; /* Altura da seção */
+  display: flex; /* Centraliza o conteúdo */
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Centraliza o texto */
+  color: #fff9e6; /* Cor do texto */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Sombra no texto */
+}
+
+/* Estiliza o título principal da seção Hero */
+.hero h1 {
+  font-size: 4.5rem; /* Tamanho da fonte */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  animation: fadeIn 1.5s ease; /* Animação de entrada */
+}
+
+/* Estiliza o parágrafo da seção Hero */
+.hero p {
+  font-size: 1.8rem; /* Tamanho da fonte */
+  margin-bottom: 3rem; /* Espaçamento inferior */
+  font-style: italic; /* Texto em itálico */
+  max-width: 700px; /* Largura máxima */
+  margin-left: auto;
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+  display: inline-block; /* Exibe como bloco inline */
+  background-color: #a38b65; /* Cor de fundo */
+  color: #fff9e6; /* Cor do texto */
+  padding: 1rem 2.5rem; /* Espaçamento interno */
+  border-radius: 50px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 1.3rem; /* Tamanho da fonte */
+  transition: all 0.4s ease; /* Transição suave */
+  border: 2px solid #4a3c2a; /* Borda */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.cta-button:hover {
+  background-color: #4a3c2a; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o botão */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+/* Seção Cardápio */
+/* Estiliza a seção do cardápio */
+#menu {
+  padding: 6rem 2rem; /* Espaçamento interno */
+  background-color: #e5d5c3; /* Cor de fundo */
+}
+
+/* Estiliza o título da seção Cardápio */
+#menu h2 {
+  text-align: center; /* Centraliza o texto */
+  font-size: 3.5rem; /* Tamanho da fonte */
+  margin-bottom: 4rem; /* Espaçamento inferior */
+  color: #4a3c2a; /* Cor do texto */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+/* Adiciona uma linha decorativa abaixo do título */
+#menu h2:after {
+  content: '';
+  display: block;
+  width: 60%; /* Largura da linha */
+  height: 3px; /* Altura da linha */
+  background: #8c7b6b; /* Cor da linha */
+  margin: 1rem auto 0; /* Centraliza a linha */
+}
+
+/* Estiliza a lista de itens do cardápio */
+.menu-list {
+  display: grid; /* Exibe os itens em grade */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Colunas responsivas */
+  gap: 3rem; /* Espaçamento entre os itens */
+  max-width: 1400px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estiliza cada item do cardápio */
+.menu-list li {
+  background-color: #fff9e6; /* Cor de fundo */
+  border-radius: 12px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde conteúdo excedente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra */
+  transition: all 0.4s ease; /* Transição suave */
+  list-style: none; /* Remove marcadores */
+  border: 1px solid #d4c4b3; /* Borda */
+}
+
+/* Efeito ao passar o mouse sobre os itens */
+.menu-list li:hover {
+  transform: translateY(-15px); /* Eleva o item */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Estiliza as imagens dos itens */
+.menu-list img {
+  width: 100%; /* Largura total */
+  height: 240px; /* Altura fixa */
+  object-fit: cover; /* Ajusta a imagem */
+  border-bottom: 3px solid #8c7b6b; /* Borda inferior */
+}
+
+/* Estiliza o título dos itens */
+.menu-list h3 {
+  font-size: 1.8rem; /* Tamanho da fonte */
+  padding: 1.5rem 1.5rem 0; /* Espaçamento interno */
+  color: #4a3c2a; /* Cor do texto */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza a descrição dos itens */
+.menu-list p {
+  padding: 1rem 1.5rem 2rem; /* Espaçamento interno */
+  color: #6b5d4d; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.1rem; /* Tamanho da fonte */
+}
+
+/* Seção Sobre */
+/* Estiliza a seção Sobre */
+#about {
+  padding: 6rem 2rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  background-color: #d4c4b3; /* Cor de fundo */
+  position: relative;
+}
+
+/* Estiliza o título da seção Sobre */
+#about h2 {
+  font-size: 3.5rem; /* Tamanho da fonte */
+  margin-bottom: 3rem; /* Espaçamento inferior */
+  color: #4a3c2a; /* Cor do texto */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+}
+
+/* Estiliza o texto da seção Sobre */
+#about p {
+  max-width: 800px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  font-size: 1.4rem; /* Tamanho da fonte */
+  line-height: 1.9; /* Altura da linha */
+  color: #4a3c2a; /* Cor do texto */
+}
+
+/* Seção Contato */
+/* Estiliza a seção Contato */
+#contact {
+  padding: 6rem 2rem; /* Espaçamento interno */
+  background-color: #e5d5c3; /* Cor de fundo */
+}
+
+/* Estiliza o título da seção Contato */
+#contact h2 {
+  text-align: center; /* Centraliza o texto */
+  font-size: 3.5rem; /* Tamanho da fonte */
+  margin-bottom: 3rem; /* Espaçamento inferior */
+  color: #4a3c2a; /* Cor do texto */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+}
+
+/* Estiliza o texto da seção Contato */
+#contact p {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 3rem; /* Espaçamento inferior */
+  font-size: 1.4rem; /* Tamanho da fonte */
+  color: #4a3c2a; /* Cor do texto */
+}
+
+/* Estiliza o endereço */
+address {
+  max-width: 900px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background-color: #fff9e6; /* Cor de fundo */
+  padding: 3rem; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+  border: 1px solid #d4c4b3; /* Borda */
+}
+
+/* Estiliza os parágrafos do endereço */
+address p {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 1.5rem; /* Espaçamento inferior */
+  font-style: normal; /* Remove itálico */
+  font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Estiliza o texto em negrito no endereço */
+address strong {
+  color: #4a3c2a; /* Cor do texto */
+  font-weight: 600; /* Peso da fonte */
+}
+
+/* Estiliza os links no endereço */
+address a {
+  color: #8c7b6b; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  transition: color 0.3s; /* Transição suave */
+  font-weight: 500; /* Peso da fonte */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+address a:hover {
+  color: #4a3c2a; /* Cor do texto ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Rodapé */
+/* Estiliza o rodapé */
+footer {
+  background-color: #4a3c2a; /* Cor de fundo */
+  color: #d4c4b3; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 3rem; /* Espaçamento interno */
+  font-family: 'Cinzel Decorative', cursive; /* Fonte decorativa */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+/* Estiliza o texto do rodapé */
+footer p {
+  font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Animações e Efeitos */
+/* Animação de fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); } /* Início da animação */
+  to { opacity: 1; transform: translateY(0); } /* Fim da animação */
+}
+
+/* Responsividade */
+/* Ajustes para telas menores que 992px */
+@media (max-width: 992px) {
+  .hero h1 {
+      font-size: 3.5rem; /* Reduz tamanho do título */
+  }
+  
+  .hero p {
+      font-size: 1.5rem; /* Reduz tamanho do parágrafo */
+  }
+  
+  nav ul {
+      gap: 1.5rem; /* Reduz espaçamento entre itens */
+  }
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.8rem; /* Reduz tamanho do título */
+  }
+  
+  .hero p {
+      font-size: 1.3rem; /* Reduz tamanho do parágrafo */
+  }
+  
+  nav ul {
+      gap: 1rem; /* Reduz espaçamento entre itens */
+  }
+  
+  .menu-list {
+      grid-template-columns: 1fr; /* Exibe itens em uma única coluna */
+  }
+  
+  #menu h2,
+  #about h2,
+  #contact h2 {
+      font-size: 2.8rem; /* Reduz tamanho dos títulos */
+  }
+} 
